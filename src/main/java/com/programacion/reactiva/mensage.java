@@ -18,4 +18,10 @@ public class mensage {
           List<Usuario> lista= Arrays.asList(new Usuario("richard","wong"));
           return lista.stream().collect(Collectors.toList());
       }
+
+      @GetMapping("/message")
+    public String message(){
+          return  "tu aplicacion fue desplegado satisfactoriamente";
+      }
+
 }
